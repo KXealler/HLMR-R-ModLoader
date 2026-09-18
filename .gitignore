@@ -1,0 +1,17 @@
+# Godot 4+ кэш
+.godot/
+
+# Godot 3 кэш (если проект старый)
+.import/
+
+# Временные файлы
+*.tmp
+*.translation
+
+# Экспортированные сборки (не исходники)
+build/
+export/
+*.exe
+*.apk
+*.pck
+*.zip

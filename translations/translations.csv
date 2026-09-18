@@ -1,0 +1,20 @@
+keys,en,ru
+LOAD_BUTTON,Load,Загрузить
+MODS_NOT_FOUND,Mods not found,Моды не найдены
+LOAD_SUCCESS,"Mod '%s' loaded successfully!","Мод '%s' успешно загружен!"
+SELECT_FOLDER,"Please select the game folder (where data.win is located)","Пожалуйста, выберите папку с игрой (где находится data.win)"
+PATH_LABEL,"Path to game folder:","Путь к папке с игрой:"
+PATH_NOT_SET,"Path not set - click to select folder","Путь не задан — нажмите, чтобы выбрать папку"
+PROGRAM_NAME,"Hotline Miami Redux-Redux mod loader","Загрузчик модов Hotline Miami Redux-Redux"
+PLAY_BUTTON,"Play","Играть"
+MODS_BUTTON,"Mods","Моды"
+SETTINGS_BUTTON,"Settings","Настройки"
+EXIT_BUTTON,"Exit","Выйти"
+MOD_LOADED,Mod  loaded successfully!,Мод успешно загружен!
+COPIED&RENAMED,"The file has been copied and renamed to: ","Файл скопирован и переименован в: "
+ERR&CODE,"Error copying file. Code: ","Ошибка при копировании файла. Код: "
+ERR_WIHOUT_CODE,"Error copying file.","Ошибка при копировании файла."
+NO_ACESS_TO_FOLDER,"Failed to access the game folder.","Не удалось получить доступ к папке игры."
+NO_FILES_IN_MODS,"There are no files in the ‘Mods’ folder.","В папке 'Mods' нет файлов."
+CANT_OPEN_MODS_FOLDER,"The folder with mods could not be opened.","Не удалось открыть папку с модами."
+MODS_FOLDER_NOT_FIND,"The ‘Mods’ folder was not found at the following path:","Папка 'Mods' не найдена по пути: "

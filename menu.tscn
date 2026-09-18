@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://deqsxgme1y2hc"]
+
+[ext_resource type="Script" uid="uid://dqbdrua4pjl41" path="res://scripts/menu.gd" id="1_lti8b"]
+[ext_resource type="Script" uid="uid://0w5lhbvcatmu" path="res://scripts/translate.gd" id="2_ouk20"]
+
+[node name="Menu" type="Control" unique_id=1501650450]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lti8b")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=866890949]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -74.5
+offset_top = -31.0
+offset_right = 74.5
+offset_bottom = 31.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NameLabel" type="Label" parent="VBoxContainer" unique_id=287674879]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "PROGRAM_NAME"
+horizontal_alignment = 1
+
+[node name="PlayButton" type="Button" parent="VBoxContainer" unique_id=53441390]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "PLAY_BUTTON"
+
+[node name="ModsButton" type="Button" parent="VBoxContainer" unique_id=657817374]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "MODS_BUTTON"
+
+[node name="SettingsButton" type="Button" parent="VBoxContainer" unique_id=1793977095]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "SETTINGS_BUTTON"
+
+[node name="ExitButton" type="Button" parent="VBoxContainer" unique_id=1824012538]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "EXIT_BUTTON"
+
+[node name="TranslateRect" type="ColorRect" parent="." unique_id=1168010087]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.14406255, 0.14406255, 0.14406255, 1)
+script = ExtResource("2_ouk20")
+
+[node name="Button" type="Button" parent="TranslateRect" unique_id=1741159306]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="Label" type="Label" parent="TranslateRect/Button" unique_id=2121864359]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 29
+text = "LG"
+
+[node name="Label" type="Label" parent="." unique_id=1299196555]
+layout_mode = 0
+offset_left = 1220.0
+offset_top = 645.0
+offset_right = 1267.0
+offset_bottom = 679.0
+theme_override_font_sizes/font_size = 24
+text = "v1.0"
+
+[node name="Label2" type="Label" parent="." unique_id=755317990]
+layout_mode = 0
+offset_left = 1044.0
+offset_top = 681.0
+offset_right = 1275.0
+offset_bottom = 715.0
+theme_override_font_sizes/font_size = 24
+text = "Created by KXealler"
+
+[connection signal="pressed" from="VBoxContainer/ModsButton" to="." method="_on_mods_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="TranslateRect/Button" to="." method="_on_lang_button_pressed"]

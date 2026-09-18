@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://dqmo6u3ijbbne"]
+
+[ext_resource type="Script" uid="uid://dxe1brb5hu5kd" path="res://scripts/main.gd" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://gme18u3ngj1a" path="res://sprites/x.png" id="2_0xm2m"]
+
+[node name="Main" type="Control" unique_id=1501650450]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ig7tw")
+
+[node name="Label" type="Label" parent="." unique_id=1142238067]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 23.0
+text = "MODS_NOT_FOUND"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=866890949]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.95
+offset_top = 23.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ItemList" type="ItemList" parent="VBoxContainer" unique_id=2110940090]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=2000272721]
+layout_mode = 2
+disabled = true
+text = "LOAD_BUTTON"
+
+[node name="Label2" type="Label" parent="." unique_id=1578703442]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -35.0
+grow_horizontal = 2
+grow_vertical = 0
+vertical_alignment = 1
+
+[node name="FileDialog" type="FileDialog" parent="." unique_id=1310545279]
+access = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=305436935]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -23.0
+offset_bottom = 23.0
+grow_horizontal = 0
+color = Color(0.10747976, 0.10747973, 0.10747973, 1)
+
+[node name="TextureButton" type="TextureButton" parent="ColorRect" unique_id=452300874]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+offset_right = 460.0
+offset_bottom = 460.0
+scale = Vector2(0.05, 0.05)
+texture_normal = ExtResource("2_0xm2m")
+stretch_mode = 0
+
+[connection signal="pressed" from="ColorRect/TextureButton" to="." method="_on_exit_pressed"]
